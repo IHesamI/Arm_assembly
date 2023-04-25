@@ -109,6 +109,7 @@ arrays_checker:
 exit_starloop:
    mov r9,#10
    strb r9 , [r1]
+   add r1,r1,#1
    add r11,r11,#1
    add r4,r4,#1
    add r6,r6,#1
@@ -135,7 +136,7 @@ printer_:
     chars_array: .word 0,0,0,0,0,0
 
 message:
-    .asciz "HElLLOWORD" 
+    .asciz "HELLOWORLD" 
     len = .-message 
     
     
